@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.round{
+    -fx-pref-height:40px;   
+    -fx-pref-width:40px;  -fx-background-color: #ff4081;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.30), 6.0, 0.3, 0,1);
+	}
+	
+.fab{
+    -fx-pref-height:50px;   
+    -fx-pref-width:50px;
+    -fx-background-color: #ff4081;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.30), 6.0, 0.3, 0,1);
+  }
