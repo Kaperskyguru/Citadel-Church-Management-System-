@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-button{
+    -fx-background-color: #003F94; 
+    -fx-text-fill: #FFFFFF
+}

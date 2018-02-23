@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="portal" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citadel.ui.members.overview.MemberdashboardController">
+    <children>
+        <AnchorPane layoutX="156.0" layoutY="-3.0" maxWidth="-Infinity" prefHeight="55.0" prefWidth="794.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutY="2.0" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="794.0" spacing="5.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4.0;">
+                    <children>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#openHome" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: #003F94;" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_Home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnAddNewMembers" layoutX="478.0" layoutY="18.0" onAction="#addMember" style="-fx-background-color: #003F94;" text="Add Members" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_Person.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="503.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Attendance" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_attendance.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="527.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Messaging" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_New_Message.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="552.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Address Book" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_Address_Book.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="576.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Groups" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_User_Groups.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="601.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Finance" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../icons/icon_Coins.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                    <padding>
+                        <javafx.geometry.Insets bottom="-6.0" left="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="memberPortal" layoutX="296.0" layoutY="60.0" prefHeight="560.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+            <children>
+                <AnchorPane fx:id="port" prefHeight="560.0" prefWidth="1150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane layoutX="4.0" layoutY="199.0">
+                            <children>
+                                <TableView layoutY="40.0" prefHeight="360.0" prefWidth="1100.0">
+                                    <columns>
+                                        <TableColumn prefWidth="75.0" text="S/N" />
+                                        <TableColumn prefWidth="75.0" text="Name" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="75.0" text="Email" />
+                                        <TableColumn prefWidth="59.0" text="Date" />
+                                        <TableColumn prefWidth="59.0" />
+                                    </columns>
+                                </TableView>
+                                <Label layoutX="410.0" layoutY="13.0" prefHeight="25.0" prefWidth="38.0" text="Search:" />
+                                <JFXComboBox editable="true" focusColor="#22baa2" labelFloat="true" layoutX="469.0" prefHeight="25.0" prefWidth="390.0" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="3.0" layoutY="23.0" prefHeight="168.0" prefWidth="1280.0">
+                            <children>
+                                <AnchorPane layoutX="22.0" layoutY="10.0" prefHeight="151.0" prefWidth="249.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Pane layoutX="15.0" layoutY="50.0" prefHeight="7.0" prefWidth="220.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #003371; -fx-background-radius: 5;" />
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="30.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Members" wrappingWidth="189.056640625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                      <AnchorPane layoutX="14.0" layoutY="-22.0" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #003F94; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                                          <children>
+                                              <ImageView fitHeight="61.0" fitWidth="51.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@../../icons/icons_Registration.png" />
+                                                  </image>
+                                              </ImageView>
+                                          </children>
+                                      </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="302.0" layoutY="10.0" prefHeight="151.0" prefWidth="249.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Pane layoutX="15.0" layoutY="49.0" prefHeight="7.0" prefWidth="220.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #F87951; -fx-background-radius: 5;" />
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="30.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Men" wrappingWidth="189.056640625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="582.0" layoutY="8.0" prefHeight="101.0" prefWidth="213.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Pane layoutX="2.0" layoutY="50.0" prefHeight="7.0" prefWidth="220.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #003371; -fx-background-radius: 5;" />
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="14.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Women" wrappingWidth="189.056640625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="841.0" layoutY="8.0" prefHeight="101.0" prefWidth="235.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Pane layoutX="9.0" layoutY="50.0" prefHeight="7.0" prefWidth="220.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #00B3A0; -fx-background-radius: 5;" />
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="14.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Number of Youths" wrappingWidth="189.056640625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                              <AnchorPane layoutX="14.0" layoutY="-22.0" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #00B3A0; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="51.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../icons/icons_Registration.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="582.0" layoutY="119.0" prefHeight="43.0" prefWidth="222.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="10.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Teenagers: " wrappingWidth="117.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="841.0" layoutY="119.0" prefHeight="43.0" prefWidth="235.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                                    <children>
+                                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="139.0" layoutY="3.0" prefHeight="40.0" prefWidth="75.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                            <font>
+                                                <Font name="Times New Roman" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <Text layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Children" wrappingWidth="97.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                        <AnchorPane layoutX="315.0" layoutY="-11.0" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #F87951; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                           <children>
+                              <ImageView fitHeight="61.0" fitWidth="51.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../icons/icons_Registration.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="592.0" layoutY="-15.0" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #003F94; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                           <children>
+                              <ImageView fitHeight="61.0" fitWidth="51.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../icons/icons_Registration.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

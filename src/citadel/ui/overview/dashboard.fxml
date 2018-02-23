@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import com.jfoenix.controls.*?>
 <?import javafx.scene.text.*?>
@@ -10,160 +11,275 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="home" prefHeight="620.0" prefWidth="1040.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citadel.ui.overview.DashboardController">
-    <stylesheets>
-        <URL value="@dashboard.css" />
-    </stylesheets>
+<AnchorPane fx:id="overviewPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citadel.ui.overview.DashboardController">
     <children>
-      <AnchorPane prefHeight="300.0" prefWidth="962.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <AnchorPane layoutX="14.0" layoutY="65.0" prefHeight="130.0" prefWidth="280.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
-               <children>
-                  <AnchorPane layoutX="17.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #003F94; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+        <AnchorPane id="AnchorPane" fx:id="home" layoutY="3.0" prefHeight="600.0" prefWidth="1100.0" styleClass="mainFxmlClass">
+            <stylesheets>
+                <URL value="@dashboard.css" />
+            </stylesheets>
+            <children>
+                <AnchorPane layoutX="14.0" prefHeight="600.0" prefWidth="1100.0">
+                    <children>
+                        <AnchorPane layoutX="14.0" layoutY="115.0" prefHeight="130.0" prefWidth="250.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                            <children>
+                                <AnchorPane layoutX="7.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #003F94; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                                    <children>
+                                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icons_Registration.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                                <Text fill="#a1a0a0" layoutX="122.0" layoutY="18.0" strokeWidth="0.0" text="Daily Attendances" textAlignment="RIGHT" wrappingWidth="123.8203125">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                                <Pane layoutX="4.0" layoutY="70.0" prefHeight="7.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #003371; -fx-background-radius: 5;" />
+                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="124.0" layoutY="22.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                    <font>
+                                        <Font name="Times New Roman" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Text layoutX="7.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of attendance">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                                <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="205.0" layoutY="83.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Plus.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="544.0" layoutY="115.0" prefHeight="130.0" prefWidth="250.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                            <children>
+                                <AnchorPane layoutX="7.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #22BAA2; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                                    <children>
+                                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icons_Group_Message.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                                <Pane layoutX="7.0" layoutY="70.0" prefHeight="7.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #00B3A0; -fx-background-radius: 5;" />
+                                <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="206.0" layoutY="84.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Plus.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <Text layoutX="9.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of messages">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="132.0" layoutY="19.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                    <font>
+                                        <Font name="Times New Roman" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Text fill="#a1a0a0" layoutX="122.0" layoutY="19.0" strokeWidth="0.0" text="Total Messages" textAlignment="RIGHT" wrappingWidth="123.8203125">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="279.0" layoutY="115.0" prefHeight="130.0" prefWidth="250.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                            <children>
+                                <AnchorPane layoutX="7.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #F87951; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
+                                    <children>
+                                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icons_Today.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                                <Pane layoutX="7.0" layoutY="70.0" prefHeight="7.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #F87951; -fx-background-radius: 5;" />
+                                <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="203.0" layoutY="81.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Plus.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <Text layoutX="10.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of events" wrappingWidth="184.4384765625">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="129.0" layoutY="19.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
+                                    <font>
+                                        <Font name="Times New Roman" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Text fill="#a1a0a0" layoutX="119.0" layoutY="19.0" strokeWidth="0.0" text="Daily Events" textAlignment="RIGHT" wrappingWidth="123.8203125">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER_LEFT" layoutX="133.0" layoutY="-8.0" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="796.0" spacing="5.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4.0;">
+                            <children>
+                                <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMousePressed="#openHome" prefHeight="30.0" prefWidth="27.0" style="-fx-background-color: #003F94;" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" onMousePressed="#openHome" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Home.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="478.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Members" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Person.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="503.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Attendance" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_attendance.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="527.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Messaging" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Group_Message.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="552.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Address Book" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Address_Book.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="576.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Groups" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_User_Groups.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton layoutX="601.0" layoutY="18.0" style="-fx-background-color: #003F94;" text="Finance" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons/icon_Coins.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                            <padding>
+                                <javafx.geometry.Insets bottom="-6.0" left="10.0" />
+                            </padding>
+                        </HBox>
+                  <AnchorPane layoutX="808.0" layoutY="115.0" prefHeight="130.0" prefWidth="250.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
                      <children>
-                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icons_Registration.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Text fill="#a1a0a0" layoutX="152.0" layoutY="18.0" strokeWidth="0.0" text="Daily Attendances" textAlignment="RIGHT" wrappingWidth="123.8203125">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-                  <Pane layoutX="4.0" layoutY="70.0" prefHeight="7.0" prefWidth="266.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #003371; -fx-background-radius: 5;" />
-                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="154.0" layoutY="22.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
-                     <font>
-                        <Font name="Times New Roman" size="22.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="7.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of daily attendance">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="235.0" layoutY="83.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icon_Plus.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="746.0" layoutY="65.0" prefHeight="130.0" prefWidth="280.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
-               <children>
-                  <AnchorPane layoutX="17.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #00B3A0; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
-                     <children>
-                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icons_Group_Message.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Pane layoutX="7.0" layoutY="70.0" prefHeight="7.0" prefWidth="266.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #00B3A0; -fx-background-radius: 5;" />
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../icons/icon_Plus.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="236.0" layoutY="84.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icon_Plus.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <Text layoutX="9.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of messages">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="152.0" layoutY="19.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
-                     <font>
-                        <Font name="Times New Roman" size="22.0" />
-                     </font>
-                  </Label>
-                  <Text fill="#a1a0a0" layoutX="152.0" layoutY="19.0" strokeWidth="0.0" text="Total Messages" textAlignment="RIGHT" wrappingWidth="123.8203125">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="374.0" layoutY="65.0" prefHeight="130.0" prefWidth="280.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
-               <children>
-                  <AnchorPane layoutX="17.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #F87951; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
-                     <children>
-                        <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icons_Today.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Pane layoutX="7.0" layoutY="70.0" prefHeight="7.0" prefWidth="266.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #F87951; -fx-background-radius: 5;" />
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../icons/icon_Plus.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="236.0" layoutY="84.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
-                     <graphic>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icon_Plus.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  <Text layoutX="9.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of church events">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-                  <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="149.0" layoutY="19.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
-                     <font>
-                        <Font name="Times New Roman" size="22.0" />
-                     </font>
-                  </Label>
-                  <Text fill="#a1a0a0" layoutX="149.0" layoutY="19.0" strokeWidth="0.0" text="Daily Events" textAlignment="RIGHT" wrappingWidth="123.8203125">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Text>
-               </children>
-            </AnchorPane>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutY="305.0" prefHeight="300.0" prefWidth="962.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <children>
-              <StackPane layoutX="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="330.0">
-                  <children>
-                      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="330.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF;">
-                          <children>
-                              <Pane layoutX="-2.0" prefHeight="51.0" prefWidth="485.0" style="-fx-background-color: #00B3A0; -fx-background-radius: 5 5 0 0;" AnchorPane.bottomAnchor="279.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane layoutX="7.0" layoutY="-52.0" prefHeight="110.0" prefWidth="110.0" style="-fx-background-color: #ff4081; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 5px;">
                            <children>
-                              <Label layoutX="36.0" layoutY="12.0" text="Members Overview" textFill="#fffefe">
+                              <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icons_Group_Message.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Pane layoutX="7.0" layoutY="70.0" prefHeight="7.0" prefWidth="240.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ff4081; -fx-background-radius: 5;" />
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="206.0" layoutY="84.0" prefHeight="40.0" prefWidth="42.0" style="-fx-background-radius: 50px;" styleClass="round">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icon_Plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Text layoutX="9.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total number of messages">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="132.0" layoutY="19.0" prefHeight="40.0" prefWidth="116.0" text="103" textAlignment="RIGHT" wrapText="true">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#a1a0a0" layoutX="122.0" layoutY="19.0" strokeWidth="0.0" text="Total Messages" textAlignment="RIGHT" wrappingWidth="123.8203125">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="302.0" layoutY="335.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="324.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 3; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="51.0" prefWidth="270.0" style="-fx-background-color: #F87951; -fx-background-radius: 5 5 0 0;">
+                           <children>
+                              <Label layoutX="46.0" layoutY="12.0" text="Finance Section" textFill="#fffefe">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="1.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../icons/icon_Person.png" />
+                                    <Image url="@../icons/icon_Coins.png" />
                                  </image>
                               </ImageView>
                            </children>
                         </Pane>
-                        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="413.0" layoutY="258.0" style="-fx-background-color: #00B3A0;" styleClass="fab">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="205.0" layoutY="260.0" style="-fx-background-color: #F87951;;" styleClass="fab">
                            <graphic>
                               <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -172,52 +288,70 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <TabPane layoutX="65.0" layoutY="51.0" prefHeight="279.0" prefWidth="483.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
-                          <tabs>
-                            <Tab text="Members">
-                              <content>
-                                <AnchorPane />
-                              </content>
-                            </Tab>
-                            <Tab text="Visitors">
-                              <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                              </content>
-                            </Tab>
-                          </tabs>
-                        </TabPane>
-                          </children>
-                      </AnchorPane>
-                  </children>
-              </StackPane>
-              <AnchorPane layoutX="541.0" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="324.0" prefWidth="485.0" style="-fx-background-color: white; -fx-background-radius: 3; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="541.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="3.0">
-                  <children>
-                      <Pane prefHeight="51.0" prefWidth="485.0" style="-fx-background-color: #F87951; -fx-background-radius: 5 5 0 0;">
-                     <children>
-                        <Label layoutX="46.0" layoutY="12.0" text="Finance Section" textFill="#fffefe">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icon_Coins.png" />
-                           </image>
-                        </ImageView>
                      </children>
-                  </Pane>
-                  <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="410.0" layoutY="224.0" style="-fx-background-color: #F87951;;" styleClass="fab">
-                     <graphic>
-                        <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../icons/icon_Plus.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </JFXButton>
-                  </children>
-              </AnchorPane>
-         </children>
-      </AnchorPane>
+                  </AnchorPane>
+                  <StackPane layoutX="14.0" layoutY="335.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="324.0" prefWidth="270.0">
+                     <children>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="330.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF;">
+                           <children>
+                              <Pane layoutX="-2.0" prefHeight="51.0" prefWidth="485.0" style="-fx-background-color: #22BAA2; -fx-background-radius: 5 5 0 0;" AnchorPane.bottomAnchor="279.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="36.0" layoutY="12.0" text="Members Overview" textFill="#fffefe">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="1.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/icon_Person.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <TabPane layoutX="65.0" layoutY="51.0" prefHeight="279.0" prefWidth="483.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+                                 <tabs>
+                                    <Tab text="Members" />
+                                    <Tab text="Visitors">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <AnchorPane layoutX="591.0" layoutY="335.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="324.0" prefWidth="470.0" style="-fx-background-color: white; -fx-background-radius: 3; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+                     <children>
+                        <Pane prefHeight="51.0" prefWidth="470.0" style="-fx-background-color: #ff4081; -fx-background-radius: 5 5 0 0;">
+                           <children>
+                              <Label layoutX="46.0" layoutY="12.0" text="Recent Notifications" textFill="#fffefe">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icon_Coins.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="405.0" layoutY="260.0" style="-fx-background-color: #ff4081;" styleClass="fab">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/icon_Plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
     </children>
 </AnchorPane>

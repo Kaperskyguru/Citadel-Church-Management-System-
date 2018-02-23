@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="add" prefHeight="620.0" prefWidth="962.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="citadel.ui.members.AddmenbersController">
+    <stylesheets>
+        <URL value="@addmenbers.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="223.0" prefHeight="233.0" prefWidth="938.0">
+         <children>
+            <JFXTextField layoutX="65.0" layoutY="9.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="8.0" layoutY="26.0" text="Name:" />
+            <Label layoutX="485.0" layoutY="203.0" text="Name:" />
+            <JFXTextField layoutX="540.0" layoutY="186.0" prefHeight="25.0" prefWidth="200.0" />
+            <JFXTextField layoutX="540.0" layoutY="121.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="485.0" layoutY="138.0" text="Name:" />
+            <JFXTextField layoutX="540.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="485.0" layoutY="80.0" text="Name:" />
+            <JFXTextField layoutX="65.0" layoutY="182.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="485.0" layoutY="30.0" text="Name:" />
+            <Label layoutX="8.0" layoutY="199.0" text="Name:" />
+            <JFXTextField layoutX="65.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="8.0" layoutY="134.0" text="Name:" />
+            <JFXTextField layoutX="540.0" layoutY="13.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="8.0" layoutY="76.0" text="Name:" />
+            <JFXTextField layoutX="65.0" layoutY="59.0" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="209.0" prefWidth="938.0">
+         <children>
+            <Label layoutX="6.0" layoutY="36.0" text="Name:" />
+            <JFXTextField layoutX="62.0" layoutY="26.0" prefHeight="25.0" prefWidth="200.0" />
+            <JFXTextField layoutX="448.0" layoutY="158.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="393.0" layoutY="175.0" text="Name:" />
+            <JFXTextField layoutX="448.0" layoutY="91.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="393.0" layoutY="108.0" text="Name:" />
+            <JFXTextField layoutX="448.0" layoutY="31.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="393.0" layoutY="48.0" text="Name:" />
+            <JFXTextField layoutX="62.0" layoutY="153.0" prefHeight="25.0" prefWidth="200.0" />
+            <Label layoutX="6.0" layoutY="172.0" text="Name:" />
+            <Label layoutX="6.0" layoutY="101.0" text="Name:" />
+            <JFXTextField layoutX="62.0" layoutY="86.0" prefHeight="25.0" prefWidth="200.0" />
+            <AnchorPane layoutX="710.0" layoutY="1.0" prefHeight="209.0" prefWidth="222.0">
+               <children>
+                  <JFXButton layoutX="75.0" layoutY="176.0" prefHeight="32.0" prefWidth="79.0" ripplerFill="WHITE" style="-fx-background-color: #003F94;" text="Photo" textFill="WHITE" />
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="36.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Add-Male-User-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="9.0" layoutY="4.0" text="Webcam" textFill="#0037ff" underline="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="-2.0" layoutY="532.0" prefHeight="17.0" prefWidth="962.0" />
+   </children>
+</AnchorPane>

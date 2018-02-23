@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="add" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="962.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citadel.ui.members.addMember.AddmembersController">
+    <stylesheets>
+        <URL value="@addmembers.css" />
+    </stylesheets>
+    <children>
+       
+        <AnchorPane layoutX="14.0" layoutY="179.0" prefHeight="115.0" prefWidth="700.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff; -fx-background-radius: 4;">
+            <children>
+                <JFXTextField layoutX="65.0" layoutY="9.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="8.0" layoutY="26.0" text="Address:" />
+                <JFXTextField layoutX="467.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="389.0" layoutY="85.0" text="City" />
+                <Label layoutX="389.0" layoutY="30.0" text="Address 2:" />
+                <JFXTextField layoutX="467.0" layoutY="13.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="8.0" layoutY="76.0" text="State:" />
+                <JFXTextField layoutX="65.0" layoutY="59.0" prefHeight="25.0" prefWidth="200.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="155.0" prefWidth="700.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff; -fx-background-radius: 4;">
+            <children>
+                <Label layoutX="6.0" layoutY="16.0" text="Name:" />
+                <JFXTextField layoutX="62.0" layoutY="6.0" prefHeight="25.0" prefWidth="200.0" />
+                <JFXTextField layoutX="464.0" layoutY="110.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="385.0" layoutY="127.0" text="Occupation:" />
+                <JFXTextField layoutX="464.0" layoutY="57.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="385.0" layoutY="74.0" text="Birthday" />
+                <JFXTextField layoutX="464.0" layoutY="11.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="385.0" layoutY="28.0" text="Last Name:" />
+                <JFXTextField layoutX="62.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="6.0" layoutY="124.0" text="Marital:" />
+                <Label layoutX="6.0" layoutY="67.0" text="Gender" />
+                <JFXTextField layoutX="62.0" layoutY="52.0" prefHeight="25.0" prefWidth="200.0" />
+            </children>
+        </AnchorPane>
+        <Separator layoutY="549.0" prefHeight="17.0" prefWidth="962.0" />
+        <JFXButton layoutX="849.0" layoutY="572.0" style="-fx-background-color: #003F94;" text="Cancel" textFill="WHITE" />
+        <JFXButton layoutX="720.0" layoutY="572.0" style="-fx-background-color: #003F94;" text="Add New Member" textFill="WHITE" />
+        <AnchorPane layoutX="14.0" layoutY="304.0" prefHeight="115.0" prefWidth="935.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff; -fx-background-radius: 4;" stylesheets="@../../main/dashboard.css">
+            <children>
+                <Label layoutX="6.0" layoutY="12.0" text="Phone" />
+                <JFXTextField layoutX="59.0" layoutY="-5.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="379.0" layoutY="70.0" text="Email:" />
+                <JFXTextField layoutX="469.0" layoutY="61.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="379.0" layoutY="20.0" text="Mobile Phone" />
+                <JFXTextField layoutX="469.0" layoutY="3.0" prefHeight="25.0" prefWidth="200.0" />
+                <JFXTextField layoutX="104.0" layoutY="53.0" prefHeight="25.0" prefWidth="156.0" />
+                <Label layoutX="6.0" layoutY="65.0" text="Business Phone:" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="738.0" layoutY="11.0" prefHeight="200.0" prefWidth="209.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff; -fx-background-radius: 4;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="33.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../icons/Add-Male-User-icon.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="4.0" layoutY="4.0" text="Webcam" textFill="#003f94" underline="true" />
+                <JFXButton layoutX="82.0" layoutY="169.0" ripplerFill="BLACK" style="-fx-background-color: #003F94;;" text="Photo" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="12.0" layoutY="429.0" prefHeight="115.0" prefWidth="935.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #ffffff; -fx-background-radius: 4;" stylesheets="@../../main/dashboard.css">
+            <children>
+                <Label layoutX="6.0" layoutY="12.0" text="Educational Level:" />
+                <JFXTextField layoutX="59.0" layoutY="-5.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="379.0" layoutY="70.0" text="Email:" />
+                <JFXTextField layoutX="469.0" layoutY="61.0" prefHeight="25.0" prefWidth="200.0" />
+                <Label layoutX="379.0" layoutY="20.0" text="Baptism Date:" />
+                <JFXTextField layoutX="469.0" layoutY="3.0" prefHeight="25.0" prefWidth="200.0" />
+                <JFXTextField layoutX="104.0" layoutY="53.0" prefHeight="25.0" prefWidth="156.0" />
+                <Label layoutX="6.0" layoutY="65.0" text="Member Status:" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

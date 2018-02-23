@@ -1,0 +1,15 @@
+.mainFxmlClass {
+
+}
+.jfx-button{
+    -fx-background-color:  #364150; 
+    -fx-text-fill: #FFFFFF
+}
+.jfx-combo-box{
+    -fx-FOCUS-COLOR:   #22BAA2;
+}
+.jfx-radio-button:selected{
+    -fx-selected-color:    #F87951;
+}
+.jfx-text-area:focused, jfx-text-field:focused{
+}

@@ -14,6 +14,7 @@ public class Runner extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setTitle("Citadel CMS");
         stage.show();
     }
 

@@ -2,3 +2,12 @@
 .mainFxmlClass {
 
 }
+
+
+.jfx-button{
+    -fx-background-color:  #003371; 
+    -fx-text-fill: #FFFFFF
+}
+label{
+    -fx-padding:20px;
+}

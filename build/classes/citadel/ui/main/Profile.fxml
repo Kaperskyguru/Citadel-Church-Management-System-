@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="190.0" prefWidth="200.0" style="-fx-background-color: #364150;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Circle fill="WHITE" layoutX="89.0" layoutY="88.0" radius="88.0" stroke="BLACK" strokeType="INSIDE" />
+        <ImageView fitHeight="110.0" fitWidth="121.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/Add-Male-User-icon.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="48.0" layoutY="143.0" text="Solomon Eseme" />
+    </children>
+</AnchorPane>

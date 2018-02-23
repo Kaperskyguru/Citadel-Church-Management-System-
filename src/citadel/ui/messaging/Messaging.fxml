@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1150.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citadel.ui.messaging.MessagingController">
+    <stylesheets>
+        <URL value="@messaging.css" />
+    </stylesheets>
+    <children>
+        <AnchorPane fx:id="messagePortal" layoutX="213.0" layoutY="280.0" maxHeight="-Infinity" prefHeight="670.0" prefWidth="1150.0" style="-fx-background-color: #F5F6F8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane layoutX="7.0" layoutY="388.0" prefHeight="268.0" prefWidth="533.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                    <children>
+                        <TableView layoutX="8.0" layoutY="55.0" prefHeight="209.0" prefWidth="513.0">
+                            <columns>
+                                <TableColumn prefWidth="36.0" text="S/N" />
+                                <TableColumn prefWidth="191.0" text="Title" />
+                                <TableColumn prefWidth="116.0" text="Date Sent" />
+                                <TableColumn prefWidth="98.0" text="Unit Amount" />
+                                <TableColumn prefWidth="71.0" text="Options" />
+                            </columns>
+                        </TableView>
+                        <Label layoutX="82.0" layoutY="14.0" text="Search" />
+                        <JFXComboBox editable="true" focusColor="#22baa2" layoutX="133.0" layoutY="10.0" prefHeight="25.0" prefWidth="275.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="568.0" layoutY="388.0" prefHeight="268.0" prefWidth="533.0" style="-fx-border-color: #003371;">
+                    <children>
+                        <TableView layoutX="11.0" layoutY="64.0" prefHeight="200.0" prefWidth="513.0">
+                            <columns>
+                                <TableColumn prefWidth="36.0" text="S/N" />
+                                <TableColumn prefWidth="191.0" text="Title" />
+                                <TableColumn prefWidth="116.0" text="Date Sent" />
+                                <TableColumn prefWidth="98.0" text="Unit Amount" />
+                                <TableColumn prefWidth="71.0" text="Options" />
+                            </columns>
+                        </TableView>
+                        <Label layoutX="83.0" layoutY="14.0" text="Search" />
+                        <JFXComboBox editable="true" focusColor="#22baa2" layoutX="130.0" layoutY="10.0" prefWidth="275.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="7.0" layoutY="14.0" prefHeight="366.0" prefWidth="533.0" style="-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-color: #FFFFFF; -fx-background-radius: 4;">
+                    <children>
+                        <JFXTextField focusColor="#f87951" labelFloat="true" layoutX="19.0" layoutY="43.0" prefHeight="25.0" prefWidth="250.0" promptText="Sender ID" />
+                        <JFXTextArea focusColor="#f87951" labelFloat="true" layoutX="19.0" layoutY="101.0" prefHeight="80.0" prefWidth="250.0" promptText="Phone Numbers" />
+                        <JFXTextArea focusColor="#f87951" labelFloat="true" layoutX="14.0" layoutY="227.0" prefHeight="91.0" prefWidth="259.0" promptText="Message" />
+                        <Label layoutX="19.0" layoutY="323.0" text="20 Characters, 1 page" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" layoutX="144.0" layoutY="188.0" prefHeight="17.0" prefWidth="115.0" text="20 Numbers" textAlignment="RIGHT">
+                            <font>
+                                <Font name="System Italic" size="10.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="224.0" layoutY="6.0" text="QUICK MESSAGE" />
+                        <Separator layoutX="272.0" layoutY="23.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="3.0" />
+                        <Separator layoutX="273.0" layoutY="318.0" prefHeight="11.0" prefWidth="259.0" />
+                        <JFXButton layoutX="210.0" layoutY="335.0" prefHeight="25.0" prefWidth="120.0" text="Send Now" />
+                        <JFXButton layoutX="367.0" layoutY="335.0" prefHeight="25.0" prefWidth="120.0" text="Send Later" />
+                        <Label layoutX="281.0" layoutY="26.0" text="Message Type:" />
+                        <JFXRadioButton fx:id="rdoTextMessage" layoutX="281.0" layoutY="50.0" selected="true" text="Text Message">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="messageType" />
+                     </toggleGroup></JFXRadioButton>
+                        <JFXRadioButton fx:id="rdoEmail" layoutX="404.0" layoutY="50.0" text="Email" toggleGroup="$messageType" />
+                        <Label layoutX="281.0" layoutY="103.0" text="Send To:" />
+                        <JFXComboBox focusColor="#22baa2" layoutX="287.0" layoutY="159.0" prefHeight="25.0" prefWidth="160.0" promptText="Choose from the list..." />
+                        <JFXButton layoutX="287.0" layoutY="199.0" prefHeight="25.0" prefWidth="160.0" text="Browse Messages" textFill="WHITE" />
+                        <JFXCheckBox layoutX="327.0" layoutY="234.0" text="Birthday Messages" />
+                        <JFXCheckBox layoutX="327.0" layoutY="263.0" text="Burial Messages" />
+                        <JFXCheckBox layoutX="269.0" layoutY="291.0" prefHeight="17.0" prefWidth="134.0" text="Recurring Message" />
+                        <JFXComboBox focusColor="#22baa2" layoutX="421.0" layoutY="289.0" />
+                        <Label layoutX="281.0" layoutY="243.0" text="Save As:" />
+                        <JFXButton layoutX="289.0" layoutY="119.0" prefHeight="25.0" prefWidth="160.0" text="Browse" />
+                  <Label layoutX="449.0" layoutY="203.0" text="e.g. docs, txt">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="568.0" layoutY="14.0" prefHeight="51.0" prefWidth="533.0" style="-fx-border-color: black;">
+                    <children>
+                        <JFXButton layoutX="14.0" layoutY="13.0" text="Add Phonebook" />
+                        <JFXButton layoutX="125.0" layoutY="13.0" text="Buy Units" />
+                        <JFXButton layoutX="200.0" layoutY="13.0" text="Draft Messages" />
+                        <JFXButton layoutX="308.0" layoutY="13.0" text="Settings" />
+                        <JFXButton layoutX="381.0" layoutY="13.0" text="Settings" />
+                        <JFXButton layoutX="451.0" layoutY="13.0" text="Settings" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="568.0" layoutY="72.0" prefHeight="309.0" prefWidth="533.0" style="-fx-border-color: orange;" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
